@@ -114,6 +114,7 @@ if(opc_carrera>0 && opc_carrera<4){
     var car=3999*6
     var mas=2999*12
     if(opc_carrera==1 && opcion_beca==1){
+
       var beca_face=parseFloat(cour-(cour*.20)).toFixed(2)
       console.log("Beca Facebook: 20% de descuento\nEl precio sin descuento por los dos meses es de: $"+(cour)+"\nEl precio final con descuento es de: $"+beca_face);
     }else if(opc_carrera==1 && opcion_beca==2){
