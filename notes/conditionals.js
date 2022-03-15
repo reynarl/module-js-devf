@@ -18,12 +18,12 @@ if( edad === 18){
 //FALSY
 // Condiciones que retornaran un resultado falso
 /*
-if(false)
-if(undefined)
-if(null)
-if(0)
-if(NaN)
-if("")
+if(false) //false
+if(undefined) //false
+if(null) //false
+if(0) //false
+if(NaN) //false
+if("") //false
 */
 
 var input = 0
@@ -36,8 +36,11 @@ if(input){
 //TRULY
 // Condiciones que retornaran un resultado verdadero
 /*
-if(true)
-if({})
+Boolean(1); //true para 1 o cualquier número diferente de cero (0)
+Boolean("a"); //true para cualquier caracter o espacio en blanco en el string
+Boolean([]); //true aunque el array esté vacío
+Boolean({}); //true aunque el objeto esté vacío
+Boolean(function(){}); //Cualquier función es verdadera también
 */
 
 var input = true

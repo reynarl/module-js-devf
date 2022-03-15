@@ -11,3 +11,5 @@ numbers.sort(function(a,b) {return a-b})
 let min = Math.min(...numbers) //devuelve el número menor de varios números
 let max = Math.max(...numbers)
 console.log(numbers + "\nNumero menor: "+min+"\nNúmero mayor: "+max)
+
+
