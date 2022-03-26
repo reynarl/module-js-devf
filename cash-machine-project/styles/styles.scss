@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+section{
+  // background-color: #e82729;
+  background-color: gray;
+  padding-top: 30px;
+  .img{
+    display: flex;
+    justify-content: center;
+    background-color: #e82729;
+    border-radius: 40px;
+    filter: drop-shadow(2px 5px 10px rgba(255, 255, 255, 0.521));
+    img{
+      width: 25%;
+    }
+  }
+
+  .screen{
+    border: 1px solid rgb(73, 73, 73);
+    margin-top: 20px;
+    background-color: rgb(41, 41, 41);
+    &-border{
+      margin: 40px;
+      border: 1px solid rgb(66, 66, 66);
+    }
+
+    &-btn-left{
+      height: 250px;
+    }
+
+    &-btn-right{
+      height: 250px;
+    }
+
+    &-text{
+      height: 350px;
+      border: 1px solid rgb(61, 61, 61);
+      background-color: #ffffff;
+    }
+    
+  }
+
+  .right-screen{
+    background-color: rgb(117, 117, 117);
+    margin-top: 20px;
+    .ticket{
+      &-text{
+        background-color: rgb(16, 16, 39);
+        color: white;
+        margin-bottom: 15px;
+        div{
+          background-color: rgb(216, 224, 224);
+          width: 100px;
+          height: 4px;
+          border-radius: 8px;
+        }
+      }
+      &-output{
+        height: 25px;
+        background-color: rgb(71, 71, 71);
+        div{
+          background-color: black;
+          width: 240px;
+          height: 10px;
+          border-radius: 8px;
+        }
+      }
+    }
+    .credit-card{
+      .input{
+        height: 100px;
+      }
+      img{
+        margin-left: 37px;
+        width: 80%;
+      }
+    }
+  }
+  .number-btns{
+    padding-top: 20px;
+    padding-left: 10%;
+    .btns{
+      position: relative;
+      span{
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        width: 30px;
+        font-size: 28px;
+        color: rgb(165, 165, 165);
+        border-radius: 3px;
+      }
+      &-arrow{
+        background-color: rgb(255, 214, 81);
+        padding-left: 6px;
+      }
+      &-close{
+        background-color: rgb(209, 25, 25);
+      }
+      &-check{
+        background-color: rgb(20, 109, 2);
+      }
+    }
+  }
+}
