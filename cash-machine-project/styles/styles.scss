@@ -17,6 +17,10 @@ section{
     }
   }
 
+  .none{
+    display: none;
+  }
+
   .screen{
     border: 1px solid rgb(73, 73, 73);
     margin-top: 20px;
@@ -26,18 +30,46 @@ section{
       border: 1px solid rgb(66, 66, 66);
     }
 
-    &-btn-left{
-      height: 250px;
+    &-btn-left, &-btn-right{
+      height: 170px;
+      margin-top: 200px;
     }
 
-    &-btn-right{
-      height: 250px;
-    }
-
-    &-text{
-      height: 350px;
-      border: 1px solid rgb(61, 61, 61);
+    .views{
+      height: 390px;
+      text-align: center;
       background-color: #ffffff;
+      color: #635455;
+    }
+
+    .optionView{
+      height: 177px;
+      color: #635455;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #signIn{
+      border: 1px solid rgb(61, 61, 61);
+    }
+
+    #logged{
+      div{
+        margin-top: 13px;
+      }
+      p{
+        margin-bottom: 0;
+        color: #f8f8f8;
+        font-size: 22px;
+        font-weight: 600;
+        background-color: #e82729;
+        border-radius: 10px;
+        padding: 7px;
+        width: 270px;
+      }
     }
     
   }

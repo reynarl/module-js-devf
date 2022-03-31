@@ -50,23 +50,23 @@
                 <!-- Retirar dinero -->
                 <div id="withdrawalView" class="none mt-0">
                   <h4 class="mb-3">Cantidad de dinero a retirar</h4>
-                  <input type="number" class="inputMoney form-control" placeholder="Monto">
-                  <button id="withdrawalBtn" type="button" class="btn btn-success mt-2">Retirar</button>
+                  <input type="number" id="inputMoneyR" class="inputMoney form-control" placeholder="Monto" value="">
+                  <button id="withdrawalBtn" type="button" class="btn btn-success mt-2" onclick="retiraMonto()">Retirar</button>
                   <span id="setWithdrawalMsg"></span>
                 </div>
                 <!-- Depositar -->
                 <div id="deposit" class="none mt-0">
                   <h4 class="mb-3">Cantidad de dinero a depositar</h4>
-                  <input type="number" class="inputMoney form-control" placeholder="Monto">
-                  <button type="button" class="btn btn-success mt-2">Depositar</button>
+                  <input type="number" id="inputMoneyDeposit" class="inputMoney form-control" placeholder="Monto">
+                  <button type="button" class="btn btn-success mt-2" onclick="deposit()">Depositar</button>
                   <span id="setDepositMsg"></span>
                 </div>
                 <!-- Transferir -->
                 <div id="transfer" class="none mt-0">
                   <h6 class="mb-2">Ingresa la cuenta a la que deseas transferir</h6>
-                  <input type="text" class="inputUserName form-control mb-2" placeholder="cuenta/usuario">
-                  <input type="number" class="inputMoney form-control" placeholder="Monto">
-                  <button type="button" class="btn btn-success mt-2">Transferir</button><br>
+                  <input type="text" id="inputUserNameTransfer" class="form-control mb-2" placeholder="cuenta/usuario">
+                  <input type="number" id="inputMoneyTransfer" class="inputMoney form-control" placeholder="Monto">
+                  <button type="button" class="btn btn-success mt-2" onclick="transfer()">Transferir</button><br>
                   <span id="setTransferMsg"></span>
                 </div>
               </div>
@@ -87,7 +87,7 @@
             <div class="btn-group-vertical gap-3 screen-btn-right col">
               <button class="btn btn-secondary btnLeftRight" value="4"><</button>
               <button class="btn btn-secondary btnLeftRight" value="5"><</button>
-              <button class="btn btn-secondary btnLeftRight" value="6"><</button>
+              <button id="btn-signInTwo" class="btn btn-secondary btnLeftRight" value="6"><</button>
             </div>
           </div>
         </div>
