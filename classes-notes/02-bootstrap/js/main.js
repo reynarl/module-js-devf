@@ -34,3 +34,45 @@ function suma(){
   }
   return result
 }
+
+var x = 14
+var y = 10
+resultado = x + y
+// console.log(j)
+if(x==14){
+  let j = 'hola'
+  console.log(j)
+}
+// z = '14'
+console.log('14'==14)
+//TEMPLATE STRING EN JS / PLANTILLAS LITERALES
+//Cadena de texto es un string donde puedo meter varias lineas sin la necesidad de concatenar con el mas
+console.log('el resultado de sumar x+y es: '+resultado+
+ '\ny la resta es:'+ (x-y))
+console.log(`el resultado de sumar x+y es ${resultado} 
+y la resta es ${x-y}`)
+
+// let p ={
+//   name: 'Reyna',
+//   hello: function(name){
+//     console.log(`Hello ${name}`)
+//   }
+// }
+
+let p2 ={
+  name: 'Reyna',
+  hello: function(){
+    console.log(`Hello ${p2.name}`)
+  }
+}
+// let obj = {
+//   hello: () => console.log('hola')
+// }
+
+// p.hello('reyna')
+p2.hello()
+p2.name = 'fer'
+p2.hello()
+Object.freeze(p2)
+p2.name = 'Carmen'
+p2.hello()
