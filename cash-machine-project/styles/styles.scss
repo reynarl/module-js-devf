@@ -136,4 +136,19 @@ section{
       }
     }
   }
+
+  #consult{
+    width: 100%;
+    .containConsult{
+      background-color: #f8f8f8;
+      filter: drop-shadow(2px 4px 6px rgba(20, 20, 20, 0.171));
+      color: #635455;
+      padding: 0 20px;
+      ol{
+        li{
+          font-size: 25px;
+        }
+      }
+    }
+  }
 }
